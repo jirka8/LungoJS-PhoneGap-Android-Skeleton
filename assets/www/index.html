@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>LungoJS 1.2</title>
+    <meta name="description" content="">
+    <meta name="author" content="Javier Jiménez Villar (@soyjavi)">
+    <!-- Mobile viewport optimization http://goo.gl/b9SaQ -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- For iPhone 4 with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/icon@2x.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/icon-72.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/images/icon.png">
+    <link rel="apple-touch-startup-image" href="assets/images/default.png">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="./lungo.js/lungo-1.2.css">
+    <link rel="stylesheet" href="./lungo.js/lungo.theme.default.css">
+    <!-- Cordova 2.0 -->
+    <script src="assets/javascripts/cordova-2.0.0.js"></script>
+</head>
+
+<body class="app">
+    <!--
+        First, you have to do is create a LungoJS Application instance in the file app.js.
+        ...and use a Webkit browser as Chrome or Safari.
+    -->
+    <section id="hello_world">
+        <header data-title="Hello world!">
+
+            <a href="#aside-example" data-target="aside" data-icon="files" class="button onleft">Aside</a>
+            <a href="#copyright" data-target="section" data-icon="files" class="button onright">Copyright</a>
+        </header>
+
+        <footer class="toolbar with-labels">
+            <nav>
+                <a href="#article-1" class="current" data-target="article" data-icon="user" data-label="User"></a>
+                <a href="#article-2" data-target="article" data-icon="group" data-label="Group"></a>
+                <a href="#article-3" data-target="article" data-icon="folder" data-label="Folder"></a>
+            </nav>
+        </footer>
+
+        <article id="article-1">article 1</article>
+        <article id="article-2">article 2</article>
+        <article id="article-3">article 3</article>
+    </section>
+
+    <section id="copyright">
+        <header data-back="home" data-title="Copyright"></header>
+        <article></article>
+    </section>
+
+    <aside id="aside-example"></aside>
+
+
+
+    <!-- LungoJS (Production mode) -->
+    <script src="lungo.js/lungo-1.2.js"></script>
+    <!-- LungoJS - Sandbox App -->
+    <script src="app/app.js"></script>
+    <script src="app/data.js"></script>
+    <script src="app/events.js"></script>
+    <script src="app/services.js"></script>
+    <script src="app/view.js"></script>
+</body>
+</html>
