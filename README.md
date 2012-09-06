@@ -1,0 +1,1 @@
+LungoJS & PhoneGap Android app skeleton
